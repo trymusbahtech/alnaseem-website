@@ -1,0 +1,12 @@
+# Local/generated files
+/tmp-qa/
+*.zip
+
+# Design/source references not needed in the deployed code repository
+/design-reference/
+/images/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
