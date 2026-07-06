@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجز خدمة طبية | مجمع عيادات النسيم الطبي</title>
+  <meta name="description" content="اختر الخدمة الطبية المناسبة، حدد الموعد، واختر طريقة الدفع المناسبة في مجمع عيادات النسيم الطبي.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+  <header class="site-header" aria-label="رأس الصفحة"><div class="nav-wrap"><a class="brand" href="index.html" aria-label="مجمع عيادات النسيم الطبي"><img src="../assets/images/logo-transparent.png" alt="شعار مجمع عيادات النسيم الطبي"></a><nav aria-label="التنقل الرئيسي"><ul class="nav-list"><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a class="is-active" href="services.html">الخدمات</a></li><li><a href="videos.html">فيديوهاتنا</a></li><li><a href="news.html">الأخبار</a></li><li><a href="careers.html">التوظيف</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></nav><div class="nav-actions"><a class="top-link" href="tel:0559221300"><img class="inline-icon" src="../assets/images/icons/phone.svg" alt="" aria-hidden="true">0559221300</a><a class="lang-btn" href="../en/services.html" aria-label="Switch to English"><img class="inline-icon" src="../assets/images/icons/globe.svg" alt="" aria-hidden="true">EN</a><a class="btn btn-secondary btn-small" href="service-booking.html"><img class="inline-icon" src="../assets/images/icons/calendar.svg" alt="" aria-hidden="true">احجز موعدك</a><button class="menu-toggle" type="button" data-open-drawer aria-label="فتح القائمة"><img class="inline-icon" src="../assets/images/icons/menu.svg" alt="" aria-hidden="true"></button></div></div></header>
+  <div class="drawer-backdrop" data-drawer-backdrop></div><aside class="mobile-drawer" data-drawer aria-hidden="true" aria-label="قائمة الجوال"><div class="drawer-head"><img src="../assets/images/logo-transparent.png" alt="شعار مجمع عيادات النسيم الطبي"><button class="icon-btn" type="button" data-close-drawer aria-label="إغلاق القائمة"><img class="inline-icon" src="../assets/images/icons/x.svg" alt="" aria-hidden="true"></button></div><nav class="drawer-nav" aria-label="تنقل الجوال"><a href="index.html">الرئيسية</a><a href="about.html">من نحن</a><a href="services.html">الخدمات</a><a href="videos.html">فيديوهاتنا</a><a href="news.html">الأخبار</a><a href="careers.html">التوظيف</a><a href="contact.html">اتصل بنا</a></nav><div class="drawer-actions"><a class="btn btn-secondary" href="service-booking.html"><img class="inline-icon" src="../assets/images/icons/calendar.svg" alt="" aria-hidden="true">احجز موعدك</a><a class="btn btn-ghost" href="../en/services.html">EN</a></div></aside>
+
+  <main>
+    <section class="inner-hero">
+      <div class="hero-media"><img src="../assets/images/services/clinical-care.png" alt="حجز الخدمات الطبية"></div>
+      <div class="container fade-up"><div class="breadcrumb"><a href="index.html">الرئيسية</a><span>/</span><a href="services.html">الخدمات</a><span>/</span><span>حجز خدمة طبية</span></div><h1>حجز خدمة طبية</h1><p>اختر القسم والخدمة المناسبة، حدد الموعد، ثم أكمل الحجز بالطريقة التي تناسبك.</p></div>
+    </section>
+
+    <section class="section" id="serviceBooking">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">خطوات الحجز</span>
+            <h2>اختر الخدمة وأكمل بيانات الحجز</h2>
+          </div>
+          <a class="btn btn-small btn-ghost" href="services.html">رجوع للخدمات الرئيسية</a>
+        </div>
+
+        <div class="booking-wizard fade-up" data-service-booking>
+          <div class="booking-progress" aria-label="خطوات الحجز">
+            <span class="is-active" data-step-indicator="service">اختيار الخدمة</span>
+            <span data-step-indicator="details">بيانات الحجز</span>
+            <span data-step-indicator="payment">الدفع</span>
+            <span data-step-indicator="success">التأكيد</span>
+          </div>
+
+          <div class="booking-services booking-step is-active" data-booking-step="service">
+            <div class="booking-step-title"><span>1</span><div><strong>اختر القسم والخدمة</strong><small>راجع التفاصيل والتكلفة قبل إدخال بيانات الحجز.</small></div></div>
+            <div class="booking-tabs" role="tablist" aria-label="الأقسام الرئيسية">
+              <button class="filter-btn is-active" type="button" data-booking-category="dental">الأسنان</button>
+              <button class="filter-btn" type="button" data-booking-category="internal">الباطنة</button>
+              <button class="filter-btn" type="button" data-booking-category="children">الأطفال</button>
+              <button class="filter-btn" type="button" data-booking-category="women">النساء والولادة</button>
+              <button class="filter-btn" type="button" data-booking-category="lab">المختبر</button>
+              <button class="filter-btn" type="button" data-booking-category="radiology">الأشعة</button>
+              <button class="filter-btn" type="button" data-booking-category="urgent">الطوارئ</button>
+              <button class="filter-btn" type="button" data-booking-category="ortho">العظام</button>
+            </div>
+
+            <div class="subservice-grid">
+              <button class="subservice-card is-active" type="button" data-subservice data-category="dental" data-title="استشارة صحة الفم والأسنان" data-price="120" data-duration="30 دقيقة" data-details="فحص الأسنان واللثة، تقييم الألم أو التسوس، وتحديد الخطة المناسبة." data-prep="يفضل إحضار أي أشعة أو تقرير سابق إن وجد." data-after="تحصل على توصية واضحة للخطوة التالية قبل مغادرة العيادة.">
+                <span class="icon icon-tooth" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/tooth.svg" alt="" aria-hidden="true"></span>
+                <span><strong>استشارة صحة الفم والأسنان</strong><small>تقييم شامل وخطة علاج</small></span>
+                <b>120 ر.س</b>
+              </button>
+              <button class="subservice-card" type="button" data-subservice data-category="dental" data-title="جلسة العناية باللثة والأسنان" data-price="250" data-duration="45 دقيقة" data-details="إزالة الجير والتصبغات السطحية مع تلميع الأسنان وإرشادات للعناية اليومية." data-prep="تجنب المشروبات الملونة قبل الزيارة مباشرة." data-after="قد يوصي الطبيب بمتابعة دورية حسب حالة اللثة.">
+                <span class="icon icon-tooth" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/tooth.svg" alt="" aria-hidden="true"></span>
+                <span><strong>جلسة العناية باللثة والأسنان</strong><small>تنظيف وتلميع وإرشادات وقائية</small></span>
+                <b>250 ر.س</b>
+              </button>
+              <button class="subservice-card" type="button" data-subservice data-category="dental" data-title="ترميم سن بلون طبيعي" data-price="300" data-duration="45 دقيقة" data-details="ترميم السن المتضرر بمادة تجميلية قريبة من لون الأسنان الطبيعي." data-prep="يتم تأكيد السعر النهائي بعد فحص السن وتحديد حجم الترميم." data-after="تجنب الأطعمة القاسية على السن في أول ساعات بعد الإجراء.">
+                <span class="icon icon-tooth" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/tooth.svg" alt="" aria-hidden="true"></span>
+                <span><strong>ترميم سن بلون طبيعي</strong><small>حشوة تجميلية بعد التقييم</small></span>
+                <b>300 ر.س</b>
+              </button>
+
+              <button class="subservice-card hidden" type="button" data-subservice data-category="internal" data-title="استشارة الباطنة العامة" data-price="150" data-duration="25 دقيقة" data-details="مراجعة الأعراض، التاريخ المرضي، وقياسات أساسية مع توصية بالفحوصات عند الحاجة." data-prep="أحضر قائمة بالأدوية الحالية وأي نتائج تحاليل حديثة." data-after="تحصل على خطة متابعة أو تحويل للفحوصات المناسبة.">
+                <span class="icon icon-stethoscope" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/stethoscope.svg" alt="" aria-hidden="true"></span>
+                <span><strong>استشارة الباطنة العامة</strong><small>فحص سريري وتقييم أولي</small></span>
+                <b>150 ر.س</b>
+              </button>
+              <button class="subservice-card hidden" type="button" data-subservice data-category="internal" data-title="مراجعة الضغط والسكر" data-price="180" data-duration="30 دقيقة" data-details="قياس العلامات الحيوية ومراجعة قراءات الضغط أو السكر وتقييم الالتزام بالعلاج." data-prep="أحضر سجل القراءات المنزلية إن وجد." data-after="يتم تحديث توصيات المتابعة حسب القراءات والحالة.">
+                <span class="icon icon-heart" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/heart-pulse.svg" alt="" aria-hidden="true"></span>
+                <span><strong>مراجعة الضغط والسكر</strong><small>متابعة قراءات وخطة علاج</small></span>
+                <b>180 ر.س</b>
+              </button>
+
+              <button class="subservice-card hidden" type="button" data-subservice data-category="children" data-title="استشارة طب الأطفال" data-price="140" data-duration="25 دقيقة" data-details="فحص الطفل ومراجعة الأعراض الشائعة مثل الحرارة، الكحة، أو آلام البطن." data-prep="أحضر كرت التطعيمات وأي أدوية يتناولها الطفل." data-after="تحصل على إرشادات واضحة للعناية والمتابعة.">
+                <span class="icon icon-baby" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/baby.svg" alt="" aria-hidden="true"></span>
+                <span><strong>استشارة طب الأطفال</strong><small>فحص الطفل وإرشاد الأهل</small></span>
+                <b>140 ر.س</b>
+              </button>
+              <button class="subservice-card hidden" type="button" data-subservice data-category="children" data-title="زيارة متابعة النمو" data-price="170" data-duration="30 دقيقة" data-details="قياس الوزن والطول ومتابعة النمو والتغذية والنوم حسب عمر الطفل." data-prep="أحضر آخر قياسات أو تقرير طبي إن وجد." data-after="تسلم توصيات مناسبة للمرحلة العمرية.">
+                <span class="icon icon-baby" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/baby.svg" alt="" aria-hidden="true"></span>
+                <span><strong>زيارة متابعة النمو</strong><small>قياسات وتغذية ونصائح</small></span>
+                <b>170 ر.س</b>
+              </button>
+
+              <button class="subservice-card hidden" type="button" data-subservice data-category="women" data-title="استشارة صحة المرأة" data-price="180" data-duration="30 دقيقة" data-details="مراجعة الأعراض النسائية وتقييم الحالة وتحديد الفحوصات أو المتابعة المناسبة." data-prep="أحضري أي تحاليل أو أشعة سابقة إن وجدت." data-after="يتم توضيح الخطة العلاجية أو المتابعة المطلوبة.">
+                <span class="icon icon-women" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/venus.svg" alt="" aria-hidden="true"></span>
+                <span><strong>استشارة صحة المرأة</strong><small>تقييم طبي ومتابعة</small></span>
+                <b>180 ر.س</b>
+              </button>
+              <button class="subservice-card hidden" type="button" data-subservice data-category="women" data-title="زيارة متابعة الحمل" data-price="220" data-duration="35 دقيقة" data-details="متابعة المؤشرات الأساسية للحمل ومراجعة التحاليل أو السونار حسب الحاجة." data-prep="أحضري كتيب المتابعة وأي نتائج حديثة." data-after="تحصلين على موعد المتابعة القادم والتوصيات اللازمة.">
+                <span class="icon icon-women" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/venus.svg" alt="" aria-hidden="true"></span>
+                <span><strong>زيارة متابعة الحمل</strong><small>اطمئنان ومراجعة دورية</small></span>
+                <b>220 ر.س</b>
+              </button>
+
+              <button class="subservice-card hidden" type="button" data-subservice data-category="lab" data-title="باقة المؤشرات الأساسية" data-price="180" data-duration="15 دقيقة" data-details="مجموعة تحاليل تساعد الطبيب في تقييم الحالة العامة ومؤشرات الدم والسكر." data-prep="قد تحتاج بعض التحاليل إلى صيام حسب توجيه المختبر." data-after="تظهر النتائج حسب نوع التحليل وإجراءات المختبر.">
+                <span class="icon icon-flask" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/flask.svg" alt="" aria-hidden="true"></span>
+                <span><strong>باقة المؤشرات الأساسية</strong><small>تحاليل دم وسكر ووظائف عامة</small></span>
+                <b>180 ر.س</b>
+              </button>
+              <button class="subservice-card hidden" type="button" data-subservice data-category="lab" data-title="فحص فيتامين د" data-price="140" data-duration="10 دقائق" data-details="تحليل مستوى فيتامين د للمساعدة في تقييم الاحتياج للمكملات." data-prep="لا يحتاج عادة إلى تجهيز خاص." data-after="تتم مراجعة النتيجة مع الطبيب عند الحاجة.">
+                <span class="icon icon-flask" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/flask.svg" alt="" aria-hidden="true"></span>
+                <span><strong>فحص فيتامين د</strong><small>عينة مختبرية سريعة</small></span>
+                <b>140 ر.س</b>
+              </button>
+
+              <button class="subservice-card hidden" type="button" data-subservice data-category="radiology" data-title="تصوير أشعة رقمية" data-price="160" data-duration="20 دقيقة" data-details="تصوير رقمي يساعد الطبيب في التشخيص حسب المنطقة المطلوبة." data-prep="أحضر طلب الطبيب أو تفاصيل الشكوى." data-after="تتوفر الصور أو التقرير حسب إجراءات قسم الأشعة.">
+                <span class="icon icon-scan" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/scan.svg" alt="" aria-hidden="true"></span>
+                <span><strong>تصوير أشعة رقمية</strong><small>حسب المنطقة المطلوبة</small></span>
+                <b>160 ر.س</b>
+              </button>
+              <button class="subservice-card hidden" type="button" data-subservice data-category="radiology" data-title="فحص موجات فوق صوتية" data-price="280" data-duration="30 دقيقة" data-details="فحص سونار للمنطقة المطلوبة يساعد في تقييم الحالة بشكل أوضح." data-prep="قد تختلف التجهيزات حسب نوع الفحص." data-after="يتم تسليم التقرير وفق مواعيد القسم.">
+                <span class="icon icon-scan" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/scan.svg" alt="" aria-hidden="true"></span>
+                <span><strong>فحص موجات فوق صوتية</strong><small>سونار تشخيصي</small></span>
+                <b>280 ر.س</b>
+              </button>
+
+              <button class="subservice-card hidden" type="button" data-subservice data-category="urgent" data-title="تقييم طبي عاجل" data-price="200" data-duration="حسب الحالة" data-details="تقييم أولي للحالة العاجلة وتحديد الأولوية والإجراء المناسب." data-prep="في الحالات الحرجة يرجى التوجه مباشرة للطوارئ أو الاتصال بالإسعاف." data-after="يتم توجيه الحالة للخدمة المناسبة حسب التقييم.">
+                <span class="icon icon-siren" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/siren.svg" alt="" aria-hidden="true"></span>
+                <span><strong>تقييم طبي عاجل</strong><small>فرز وتوجيه الحالة</small></span>
+                <b>200 ر.س</b>
+              </button>
+              <button class="subservice-card hidden" type="button" data-subservice data-category="ortho" data-title="استشارة العظام والمفاصل" data-price="170" data-duration="30 دقيقة" data-details="تقييم آلام العظام أو المفاصل أو الإصابات وتحديد الفحوصات المطلوبة." data-prep="أحضر أي أشعة أو تقارير إصابة سابقة." data-after="تحصل على توصية علاجية أو خطة متابعة.">
+                <span class="icon icon-bone" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/bone.svg" alt="" aria-hidden="true"></span>
+                <span><strong>استشارة العظام والمفاصل</strong><small>تقييم الألم أو الإصابة</small></span>
+                <b>170 ر.س</b>
+              </button>
+            </div>
+
+            <div class="selected-service-details">
+              <div>
+                <span class="section-kicker">تفاصيل الخدمة</span>
+                <h3 data-service-detail-title>استشارة صحة الفم والأسنان</h3>
+                <p data-service-detail-text>فحص الأسنان واللثة، تقييم الألم أو التسوس، وتحديد الخطة المناسبة.</p>
+              </div>
+              <div class="service-detail-notes">
+                <div><strong>قبل الزيارة</strong><span data-service-detail-prep>يفضل إحضار أي أشعة أو تقرير سابق إن وجد.</span></div>
+                <div><strong>بعد الزيارة</strong><span data-service-detail-after>تحصل على توصية واضحة للخطوة التالية قبل مغادرة العيادة.</span></div>
+              </div>
+            </div>
+
+            <div class="booking-step-actions">
+              <button class="btn btn-secondary" type="button" data-next-step="details">متابعة لبيانات الحجز</button>
+            </div>
+          </div>
+
+          <form class="booking-card booking-form booking-step" data-booking-step="details" data-booking-form novalidate hidden>
+            <div class="booking-step-title"><span>2</span><div><strong>بيانات الحجز</strong><small>أدخل بيانات المريض والموعد لإكمال الطلب.</small></div></div>
+            <div class="booking-summary">
+              <div><span>الخدمة</span><strong data-booking-title>كشف أسنان شامل</strong></div>
+              <div><span>التكلفة</span><strong><span data-booking-price>120</span> ر.س</strong></div>
+              <div><span>المدة</span><strong data-booking-duration>30 دقيقة</strong></div>
+            </div>
+
+            <div class="booking-form-section">
+              <h3>بيانات المريض</h3>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="bookingName">الاسم الكامل</label>
+                  <input id="bookingName" name="bookingName" type="text" required placeholder="اسم المريض">
+                </div>
+                <div class="form-field">
+                  <label for="bookingPhone">رقم الجوال</label>
+                  <input id="bookingPhone" name="bookingPhone" type="tel" required placeholder="05xxxxxxxx">
+                </div>
+                <div class="form-field">
+                  <label for="bookingGender">الجنس</label>
+                  <select id="bookingGender" name="bookingGender" required>
+                    <option value="">اختر</option>
+                    <option>ذكر</option>
+                    <option>أنثى</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="bookingAge">العمر</label>
+                  <input id="bookingAge" name="bookingAge" type="number" min="1" max="120" required placeholder="مثال: 32">
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-form-section">
+              <h3>الموعد</h3>
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="bookingDate">التاريخ</label>
+                  <input id="bookingDate" name="bookingDate" type="date" required>
+                </div>
+                <div class="form-field">
+                  <label for="bookingTime">الموعد</label>
+                  <select id="bookingTime" name="bookingTime" required>
+                    <option value="">اختر الموعد</option>
+                    <option>09:00 صباحا</option>
+                    <option>11:30 صباحا</option>
+                    <option>04:00 مساء</option>
+                    <option>08:30 مساء</option>
+                  </select>
+                </div>
+                <div class="form-field full">
+                  <label for="bookingNotes">ملاحظات اختيارية</label>
+                  <textarea id="bookingNotes" name="bookingNotes" placeholder="اكتب أي تفاصيل تساعد الفريق الطبي قبل الزيارة"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="booking-form-section">
+              <h3>طريقة الدفع</h3>
+              <div class="payment-choice-group" aria-label="طريقة الدفع">
+                <label class="payment-choice">
+                  <input type="radio" name="paymentMethod" value="online" checked>
+                  <span><strong>بوابة الدفع</strong><small>مدى، فيزا، ماستر كارد، Apple Pay</small></span>
+                </label>
+                <label class="payment-choice">
+                  <input type="radio" name="paymentMethod" value="tabby">
+                  <span><strong>تابي</strong><small>تقسيم المبلغ على دفعات حسب أهلية العميل</small></span>
+                </label>
+                <label class="payment-choice">
+                  <input type="radio" name="paymentMethod" value="tamara">
+                  <span><strong>تمارا</strong><small>تقسيط مرن مع شاشة تحقق قبل الإكمال</small></span>
+                </label>
+                <label class="payment-choice">
+                  <input type="radio" name="paymentMethod" value="clinic">
+                  <span><strong>الدفع عند الحضور</strong><small>تأكيد الموعد وسداد التكلفة في الفرع</small></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="booking-payment-logos" aria-label="وسائل الدفع المتاحة">
+              <img src="../assets/images/logos/payments/mada.svg" alt="Mada">
+              <img src="../assets/images/logos/payments/visa.svg" alt="Visa">
+              <img src="../assets/images/logos/payments/mastercard.svg" alt="Mastercard">
+              <img src="../assets/images/logos/payments/tabby.svg" alt="Tabby">
+              <img src="../assets/images/logos/payments/tamara.svg" alt="Tamara">
+            </div>
+
+            <div class="booking-step-actions">
+              <button class="btn btn-ghost" type="button" data-prev-step="service">رجوع لاختيار الخدمة</button>
+              <button class="btn btn-secondary" type="submit">متابعة لطريقة الدفع</button>
+            </div>
+          </form>
+
+          <div class="payment-preview booking-step" data-booking-step="payment" data-payment-preview aria-live="polite" hidden>
+            <div data-checkout-content>
+              <div class="checkout-head">
+                <span class="section-kicker">3. الدفع</span>
+                <h2>إكمال الدفع</h2>
+                <p>راجع ملخص الطلب ثم أكمل الدفع بالطريقة المختارة.</p>
+              </div>
+
+              <div class="checkout-layout">
+                <aside class="order-summary-card">
+              <span class="section-kicker">ملخص الطلب</span>
+              <h3 data-checkout-service>استشارة صحة الفم والأسنان</h3>
+              <dl>
+                <div><dt>التاريخ</dt><dd data-checkout-date>اختر التاريخ</dd></div>
+                <div><dt>الموعد</dt><dd data-checkout-time>اختر الموعد</dd></div>
+                <div><dt>المريض</dt><dd data-checkout-patient>لم يتم إدخال الاسم</dd></div>
+                <div><dt>الجوال</dt><dd data-checkout-phone>لم يتم إدخال الجوال</dd></div>
+                <div class="order-total"><dt>الإجمالي</dt><dd><span data-checkout-price>120</span> ر.س</dd></div>
+              </dl>
+            </aside>
+
+            <div class="checkout-panel is-active" data-payment-panel="online">
+              <div class="checkout-card-visual">
+                <div><span>المبلغ المستحق</span><strong><span data-checkout-price>120</span> ر.س</strong></div>
+                <div class="card-chip"></div>
+                <p>**** **** **** 4821</p>
+              </div>
+              <div>
+                <h3>بيانات البطاقة</h3>
+                <div class="payment-fields">
+                  <div class="form-field full">
+                    <label for="cardName">الاسم على البطاقة</label>
+                    <input id="cardName" type="text" placeholder="مثال: MOHAMMED ALI" data-payment-required>
+                  </div>
+                  <div class="form-field full">
+                    <label for="cardNumber">رقم البطاقة</label>
+                    <input id="cardNumber" type="text" inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000" data-payment-required>
+                  </div>
+                  <div class="form-field">
+                    <label for="cardExpiry">تاريخ الانتهاء</label>
+                    <input id="cardExpiry" type="text" inputmode="numeric" maxlength="5" placeholder="MM/YY" data-payment-required>
+                  </div>
+                  <div class="form-field">
+                    <label for="cardCvv">CVV</label>
+                    <input id="cardCvv" type="password" inputmode="numeric" maxlength="4" placeholder="***" data-payment-required>
+                  </div>
+                </div>
+                <div class="checkout-actions"><button class="btn btn-secondary" type="button" data-complete-payment>الدفع الآن</button></div>
+              </div>
+            </div>
+
+            <div class="checkout-panel" data-payment-panel="tabby">
+              <div class="installment-box tabby-box"><img src="../assets/images/logos/payments/tabby.svg" alt="Tabby"><strong><span data-installment-price>30</span> ر.س / 4 دفعات</strong><small>الدفعة الأولى الآن، والباقي حسب جدول الدفعات.</small></div>
+              <div>
+                <h3>بيانات تابي</h3>
+                <div class="payment-fields">
+                  <div class="form-field">
+                    <label for="tabbyPhone">رقم الجوال</label>
+                    <input id="tabbyPhone" type="tel" placeholder="05xxxxxxxx" data-payment-required>
+                  </div>
+                  <div class="form-field">
+                    <label for="tabbyId">رقم الهوية / الإقامة</label>
+                    <input id="tabbyId" type="text" inputmode="numeric" placeholder="10 أرقام" data-payment-required>
+                  </div>
+                </div>
+                <div class="installment-list">
+                  <span>اليوم: <b><span data-installment-price>30</span> ر.س</b></span>
+                  <span>بعد شهر: <b><span data-installment-price>30</span> ر.س</b></span>
+                  <span>بعد شهرين: <b><span data-installment-price>30</span> ر.س</b></span>
+                  <span>بعد 3 أشهر: <b><span data-installment-price>30</span> ر.س</b></span>
+                </div>
+                <div class="checkout-actions"><button class="btn btn-secondary" type="button" data-complete-payment>المتابعة مع تابي</button></div>
+              </div>
+            </div>
+
+            <div class="checkout-panel" data-payment-panel="tamara">
+              <div class="installment-box tamara-box"><img src="../assets/images/logos/payments/tamara.svg" alt="Tamara"><strong><span data-tamara-price>40</span> ر.س / 3 دفعات</strong><small>قسّم المبلغ على دفعات واضحة قبل التأكيد.</small></div>
+              <div>
+                <h3>بيانات تمارا</h3>
+                <div class="payment-fields">
+                  <div class="form-field">
+                    <label for="tamaraPhone">رقم الجوال</label>
+                    <input id="tamaraPhone" type="tel" placeholder="05xxxxxxxx" data-payment-required>
+                  </div>
+                  <div class="form-field">
+                    <label for="tamaraEmail">البريد الإلكتروني</label>
+                    <input id="tamaraEmail" type="email" placeholder="name@example.com" data-payment-required>
+                  </div>
+                </div>
+                <div class="installment-list">
+                  <span>اليوم: <b><span data-tamara-price>40</span> ر.س</b></span>
+                  <span>بعد شهر: <b><span data-tamara-price>40</span> ر.س</b></span>
+                  <span>بعد شهرين: <b><span data-tamara-price>40</span> ر.س</b></span>
+                </div>
+                <div class="checkout-actions"><button class="btn btn-secondary" type="button" data-complete-payment>المتابعة مع تمارا</button></div>
+              </div>
+            </div>
+
+            <div class="checkout-panel" data-payment-panel="clinic">
+              <div class="clinic-pay-box"><span class="icon icon-card" aria-hidden="true"><img class="icon-img" src="../assets/images/icons/credit-card.svg" alt="" aria-hidden="true"></span><strong>الدفع عند الحضور</strong><small>يتم سداد التكلفة داخل الفرع عند الوصول.</small></div>
+              <div>
+                <h3>تأكيد الحجز</h3>
+                <div class="clinic-confirm-box">
+                  <strong>سيتم حجز الموعد بدون سداد إلكتروني</strong>
+                  <span>يرجى الحضور قبل الموعد بعشر دقائق لإتمام إجراءات الاستقبال.</span>
+                  <label><input type="checkbox" data-payment-required> أؤكد رغبتي في الدفع عند الحضور</label>
+                </div>
+                <div class="checkout-actions"><button class="btn btn-secondary" type="button" data-complete-payment>تأكيد الحجز</button></div>
+              </div>
+            </div>
+              </div>
+
+              <div class="booking-step-actions">
+                <button class="btn btn-ghost" type="button" data-prev-step="details">رجوع لبيانات الحجز</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-success booking-step" data-booking-step="success" data-booking-success hidden>
+            <span class="success-mark">✓</span>
+            <div>
+              <h3>تم تأكيد الحجز</h3>
+              <p>رقم الحجز: <strong data-success-code>NSM-4821</strong></p>
+              <p><span data-success-service>استشارة صحة الفم والأسنان</span> - <span data-success-date>اختر التاريخ</span> - <span data-success-time>اختر الموعد</span></p>
+              <div class="booking-step-actions">
+                <a class="btn btn-secondary" href="index.html">العودة للرئيسية</a>
+                <a class="btn btn-ghost" href="service-booking.html">حجز خدمة أخرى</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><img class="footer-logo" src="../assets/images/logo-transparent.png" alt="شعار مجمع عيادات النسيم الطبي"><p>نقدم رعاية صحية متكاملة بأحدث التقنيات وطاقم طبي متخصص لجميع أفراد الأسرة.</p><div class="social-row"><a href="#" aria-label="فيسبوك"><img src="../assets/images/icons/social-facebook.svg" alt="" aria-hidden="true"></a><a href="#" aria-label="إنستغرام"><img src="../assets/images/icons/social-instagram.svg" alt="" aria-hidden="true"></a><a href="#" aria-label="سناب شات"><img src="../assets/images/icons/social-snapchat.svg" alt="" aria-hidden="true"></a><a href="#" aria-label="تيك توك"><img src="../assets/images/icons/social-tiktok.svg" alt="" aria-hidden="true"></a></div></div><div><h3>روابط سريعة</h3><ul class="footer-links"><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">من نحن</a></li><li><a href="services.html">الخدمات</a></li><li><a href="videos.html">فيديوهاتنا</a></li><li><a href="news.html">الأخبار</a></li><li><a href="careers.html">التوظيف</a></li><li><a href="contact.html">اتصل بنا</a></li></ul></div><div><h3>خدماتنا</h3><ul class="footer-links"><li>طب الأسنان</li><li>الباطنة</li><li>الأطفال</li><li>النساء والولادة</li><li>المختبر</li><li>الأشعة</li><li>الطوارئ</li><li>العظام</li></ul></div><div><h3>تواصل معنا</h3><ul class="footer-links"><li>النسيم الغربي، شارع أسامة بن زيد، الرياض</li><li><a href="tel:0559221300">0559221300</a></li><li><a href="tel:0579300993">0579300993</a></li><li><a href="tel:0112067737">0112067737</a></li><li><a href="mailto:alnasem2050@gmail.com">alnasem2050@gmail.com</a></li><li>8:00 صباحا - 12:00 منتصف الليل</li></ul></div></div><div class="container copyright">© 2026 مجمع عيادات النسيم الطبي. جميع الحقوق محفوظة.</div></footer>
+  <div class="floating-actions" aria-label="روابط سريعة">
+    <a class="floating-action floating-whatsapp" href="https://wa.me/966559221300" aria-label="تواصل عبر واتساب"><img src="../assets/images/icons/whatsapp.svg" alt="" aria-hidden="true"></a>
+    <button class="floating-action back-to-top" type="button" data-back-to-top aria-label="الصعود للأعلى"><img src="../assets/images/icons/arrow-up.svg" alt="" aria-hidden="true"></button>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
