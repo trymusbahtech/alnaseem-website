@@ -370,6 +370,14 @@ body.drawer-open .drawer-backdrop {
   object-fit: cover;
 }
 
+.hero-media video {
+  background: #071D2B;
+}
+
+.hero-media video::-webkit-media-controls {
+  display: none !important;
+}
+
 .hero-media[data-hero-slider] img {
   position: absolute;
   inset: 0;

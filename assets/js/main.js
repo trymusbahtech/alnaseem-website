@@ -176,6 +176,71 @@
     });
   }, 1400);
 
+  var allVideos = Array.prototype.slice.call(document.querySelectorAll("video"));
+  allVideos.forEach(function (video) {
+    video.playsInline = true;
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+  });
+
+  var autoplayVideos = allVideos.filter(function (video) {
+    return video.closest(".hero-media") && (video.hasAttribute("autoplay") || !video.hasAttribute("controls"));
+  });
+
+  function prepareAutoplayVideo(video) {
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    video.setAttribute("autoplay", "");
+    video.setAttribute("preload", video.getAttribute("preload") || "metadata");
+    if (!video.hasAttribute("controls")) {
+      video.removeAttribute("controls");
+    }
+  }
+
+  function playAutoplayVideo(video) {
+    if (!video || video.paused === false) return;
+    prepareAutoplayVideo(video);
+    var playAttempt = video.play();
+    if (playAttempt && typeof playAttempt.catch === "function") {
+      playAttempt.then(function () {
+        video.classList.add("is-playing");
+        video.classList.remove("is-video-fallback");
+      }).catch(function () {
+        video.classList.add("is-video-fallback");
+      });
+    } else {
+      video.classList.add("is-playing");
+    }
+  }
+
+  if (autoplayVideos.length) {
+    autoplayVideos.forEach(function (video) {
+      prepareAutoplayVideo(video);
+      ["loadedmetadata", "loadeddata", "canplay"].forEach(function (eventName) {
+        video.addEventListener(eventName, function () {
+          playAutoplayVideo(video);
+        }, { once: true });
+      });
+      playAutoplayVideo(video);
+    });
+
+    ["touchstart", "pointerdown", "click"].forEach(function (eventName) {
+      document.addEventListener(eventName, function () {
+        autoplayVideos.forEach(playAutoplayVideo);
+      }, { once: true, passive: true });
+    });
+
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) {
+        autoplayVideos.forEach(playAutoplayVideo);
+      }
+    });
+  }
+
   document.querySelectorAll("[data-slider]").forEach(function (slider) {
     var track = slider.querySelector("[data-slider-track]");
     var sliderScope = slider.parentElement || slider;
