@@ -289,7 +289,8 @@
   }
 
   .map-frame,
-  .map-frame img {
+  .map-frame img,
+  .map-frame iframe {
     min-height: 380px;
   }
 
