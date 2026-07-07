@@ -105,6 +105,7 @@
   .section-head,
   .split,
   .service-detail,
+  .article-layout,
   .booking-shell,
   .booking-page-shell,
   .checkout-layout,
@@ -175,6 +176,10 @@
 
   .newsletter-form {
     flex-direction: column;
+  }
+
+  .article-sidebar {
+    position: static;
   }
 
   .form-card {
@@ -256,6 +261,19 @@
   .service-card img,
   .news-card img {
     height: 160px;
+  }
+
+  .article-detail {
+    padding: 22px;
+  }
+
+  .article-cover {
+    aspect-ratio: 16 / 11;
+    border-radius: 18px;
+  }
+
+  .article-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .departments-track {
@@ -474,6 +492,10 @@
   .news-card img {
     height: auto;
     aspect-ratio: 16 / 10;
+  }
+
+  .article-gallery {
+    grid-template-columns: 1fr;
   }
 
   .testimonial-media {
@@ -696,6 +718,10 @@
     width: 40px;
     height: 40px;
     font-size: 1.45rem;
+  }
+
+  .article-gallery {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
